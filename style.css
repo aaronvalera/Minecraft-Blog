@@ -13,38 +13,44 @@ body{
 
 nav a{
      color: #3F3F3F;
-     font-size: 20px;
+     font-size: 25px;
      font-family: "Russo One", sans-serif;
     font-weight: 1000;
     font-style: normal;
+    text-decoration: none;
 }
 
 nav a:hover {
-    color: #0056b3; 
+    color: #524C4A;
+    text-decoration: underline;
 }
-
 
 .barra-navegacion{
     background: #7A7A7A;
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    z-index: 1000;
-    text-align: center;
-
-}
-.barra-navegacion{
     background-color: #C6C6C6;
-    border: 10px solid #555555;
+    border: 5px solid #555555;
     color: #3F3F3F;
     font-family: 'VT323', monospace;
-    padding: 10px;
     outline: none;
     box-shadow: inset -2px -2px 0px #8B8B8B, inset 2px 2px 0px #FFFFFF;
-    text-align: center;
+    padding: 10px;
+    height: 20px;                    /* code compressed */
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
+/* BUTTONS OF THE NAVIGATION BAR
+arranging and aligning the buttons */
 
+#bar-buttons {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    width: 40%;
+}
 
 .contenedor, .contenedor2, .contenedor3{
     position: relative;
