@@ -63,7 +63,7 @@ nav a:hover {
     /* personalizacion de el texto como tal */
     font-size: 19px;
     position: absolute;
-    top: 0;
+    top: -19px;
     margin-left: 361px;
     width: 762px;
     height: 95%;
@@ -107,7 +107,7 @@ nav a:hover {
     /* personalizacion de el texto como tal */
     font-size: 19px;
     position: absolute;
-    top: 0;
+    top: -19px;
     margin-left: 361px;
     width: 762px;
     height: 95%;
@@ -160,11 +160,14 @@ a:hover{
   padding: 20px;
 }
 
+
 .card {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
   position: relative;
-  width: 230px;
+  width: 300px;
   height: 180px;
   overflow: hidden; /* Oculta la info que se sale */
   border-radius: 10px;
@@ -175,7 +178,7 @@ a:hover{
 .card img {
     
   width: auto;
-  height: 60%;
+  height: 50%;
   object-fit: cover;
 }
 
