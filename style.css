@@ -66,7 +66,7 @@ nav a:hover {
     top: -19px;
     margin-left: 361px;
     width: 762px;
-    height: 95%;
+    height: 97%;
     text-align: center;
 
     /* personalizacion de caja de textos */
@@ -110,7 +110,7 @@ nav a:hover {
     top: -19px;
     margin-left: 361px;
     width: 762px;
-    height: 95%;
+    height: 97%;
     text-align: center;
 
     /* personalizacion de caja de textos */
@@ -128,7 +128,7 @@ nav a:hover {
     width: 742px;
     height: 100%;
     position: relative;
-    position: relative;
+    
 
 
     background-color: #C6C6C6;
@@ -152,7 +152,7 @@ a:hover{
     text-decoration: underline;
 }
 /* Cards */
-.card-container {
+.card-container{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -205,8 +205,23 @@ a:hover{
   transform: translateY(-5px); /* salto de la tarjeta */
 }
 
+p{
+    font-size: 13px;
+}
+.titulo, .texto {
+    width: 100%;       
+    text-align: center; 
+    margin-bottom: 20px; 
+    margin-top: 10px;    
+}
 
-
+.titulo h1 {
+    display: inline-block;
+    
+}
+.texto p{
+    font-size: 19px;
+}
 
 /* id */
 /* BUTTONS OF THE NAVIGATION BAR
@@ -218,6 +233,7 @@ arranging and aligning the buttons */
     align-items: center;
     width: 40%;
 }
+
 
 
 
