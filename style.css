@@ -1,15 +1,14 @@
 body{
-    margin: 0;
-    padding: 0%;
-    overflow-x: hidden;
-    width: 100%;    
-    background: #7A7A7A;
-    min-height: 100vh;
-    
-    
+     display: flex;
+     flex-direction: column;
+     margin: 0px;
 }
 
-/* Clases */
+/* Classes */
+
+header {
+    width: 100%;
+}
 
 nav a{
      color: #3F3F3F;
@@ -27,8 +26,11 @@ nav a:hover {
 .barra-navegacion img{
     height: 100px;
 }
-.barra-navegacion{
+.nav-bar{
+    display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
     background: #7A7A7A;
     background-color: #C6C6C6;
     border: 5px solid #555555;
@@ -38,97 +40,87 @@ nav a:hover {
     box-shadow: inset -2px -2px 0px #8B8B8B, inset 2px 2px 0px #FFFFFF;
     padding: 10px;
     height: 20px;                    /* code compressed */
-    width: 100%;
     position: fixed;
     z-index: 1;
+}
+
+#minecraft-bar-logo {
+    height: 100px;
+
+}
+
+.top-bg {
     display: flex;
-    justify-content: space-between;
-}
-
-
-
-.contenedor, .contenedor2, .contenedor3{
-    position: relative;
-}
-
-/* fondo debajo del parrafo */
-
-.fondo1{
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 580px;
+    margin-bottom: 50px;
+}
+.trailer-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.9);
+    transition: opacity 0.5s ease-in-out;
 }
 
-/* contenedor del parrafo */
-
-.contenedor p{
-    /* personalizacion de el texto como tal */
-    font-size: 19px;
-    position: absolute;
-    top: -19px;
-    margin-left: 361px;
-    width: 762px;
-    height: 95%;
-    text-align: center;
-
-    /* personalizacion de caja de textos */
-    background-color: #C6C6C6;
-    border: 10px solid #6f6d6d;
-    color: #3F3F3F;
-    font-family: 'VT323', monospace;
-    padding: 10px;
-    outline: none;
-    box-shadow: inset -2px -2px 0px #8B8B8B, inset 2px 2px 0px #FFFFFF;
-}
-
-.fondo-arriba{
-    margin-top: 0;
+.contenedor,
+.contenedor2,
+.contenedor3,
+#inicio,
+#biomas,
+#mobs {
     display: flex;
     flex-direction: column;
-}
-.fondo-arriba1{
-   height: 750px;
-    width: 100%;
+    align-items: center;
+    height: auto;
 }
 
-.resaltado {
-    display: inline-block; /* Mantiene el flujo pero permite estilos */
-    font-weight: bold;
-    color: #000000;         /* Negro puro para que sea más "fuerte" */
-    font-size: 26px;        /* Más grande para resaltar */
-    width: 100%;
-}
- 
-.contenedor2 img{
-    height: 1150px;
-}
-.contenedor3 img{
-    height: 1150px;
-}
-.contenedor2 p{
-    /* personalizacion de el texto como tal */
+.container,
+.container2,
+.container3 {
+    /* personalizacion cajas de texto */
+    background-color: #C6C6C6;
+    border: 10px solid #6f6d6d;
+    color: #3F3F3F;
+    font-family: 'VT323', monospace;
     font-size: 19px;
-    position: absolute;
-    top: -19px;
-    margin-left: 361px;
-    width: 762px;
-    height: 95%;
     text-align: center;
-
-    /* personalizacion de caja de textos */
-    background-color: #C6C6C6;
-    border: 10px solid #6f6d6d;
-    color: #3F3F3F;
-    font-family: 'VT323', monospace;
     padding: 10px;
     outline: none;
     box-shadow: inset -2px -2px 0px #8B8B8B, inset 2px 2px 0px #FFFFFF;
+    width: 65%;
 }
- .card-container{
-    margin-top: -72.2rem;
-    margin-left: 361px;
+
+.pic1 {
+    width: 50%;
+}
+
+#inicio,
+#biomas,
+#mobs {
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+#inicio {
+    background-image: url(./blog-images/coal-ore.jpg);
+}
+
+#biomas {
+    background-image: url(./blog-images/iron-ore.jpg);
+}
+
+#mobs {
+    background-image: url(/blog-images/diamond-ore.jpg);
+}
+
+.card-container{
     width: 742px;
-    height: 100%;
-    position: relative;
-    position: relative;
+ 
 
 
     background-color: #C6C6C6;
@@ -139,7 +131,8 @@ nav a:hover {
     outline: none;
     box-shadow: inset -2px -2px 0px #8B8B8B, inset 2px 2px 0px #FFFFFF;
 }
-a{
+
+a {
     color: #3F3F3F;
     font-size: 20px;
     font-family: "Russo One", sans-serif;
@@ -151,6 +144,7 @@ a:hover{
     color: #524C4A;
     text-decoration: underline;
 }
+
 /* Cards */
 .card-container {
   display: flex;
@@ -205,10 +199,8 @@ a:hover{
   transform: translateY(-5px); /* salto de la tarjeta */
 }
 
-
-
-
 /* id */
+
 /* BUTTONS OF THE NAVIGATION BAR
 arranging and aligning the buttons */
 
@@ -218,8 +210,3 @@ arranging and aligning the buttons */
     align-items: center;
     width: 40%;
 }
-
-
-
-
-
