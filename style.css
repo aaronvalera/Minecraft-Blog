@@ -125,7 +125,7 @@ nav a:hover {
     background-image: url(/blog-images/diamond-ore.jpg);
 }
 
-.card-container{
+/* .card-container{
     width: 742px;
  
 
@@ -137,7 +137,7 @@ nav a:hover {
     padding: 10px;
     outline: none;
     box-shadow: inset -2px -2px 0px #8B8B8B, inset 2px 2px 0px #FFFFFF;
-}
+} */
 
 a {
     color: #3F3F3F;
@@ -185,6 +185,7 @@ a:hover{
 
 /* Estilos de la información oculta */
 .card-info {
+  font-size: 13px;
   position: absolute;
   bottom: -100%; /* hace que empiece fuera de vista la informacion*/
   left: 0;
