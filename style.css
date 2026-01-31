@@ -1,14 +1,11 @@
 body{
      display: flex;
      flex-direction: column;
+     align-items: center;
      align-content: center;
      justify-content: center;
      min-height: 100vh;
      margin: 0px;
-}
-
-* {
-
 }
 
 /* Classes */
@@ -82,6 +79,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: auto;
 }
 
@@ -227,65 +225,63 @@ arranging and aligning the buttons */
 
 /* carrusel biomas */
 
-.card-list .card-item {
-    list-style: none;
-}
-
-.card-list .card-item .card-link {
-    width: 400px;
-    display: block;
-    background: #fff;
-    padding: 18px;
-    border-radius: 12px;
-    text-decoration: none;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-    border: 2px solid transparent;
-    transition: 0.2s ease;
-}
-
-.card-list .card-item .card-link:hover {
-    border-color: #5372F0;
-}
-
-.card-list .card-link .card-image {
+.slider-section img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-.card-list .card-link .badge {
-    color: #5372F0;
-    background: #dde4ff;
-    margin: 16px 0px 18px;
-    padding: 8px 16px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    width: fit-content;
-    border-radius: 50px;
+.carousel-container {
+    width: 500px;
+    height: 300px;
+    background-color: #e0e0e0;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
 }
 
-.card-list .card-link .card-text {
-    font-size: 1.19rem;
-    color: #000;
-    font-weight: 600;
+.carousels {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    border: solid thin #7A7A7A;
 }
 
-.card-list .card-link .card-button {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    margin: 30px 0 5px;
-    border: 2px solid #5372F0;
-    color: #5372F0;
-    background: none;
-    cursor: pointer;
-    transform: rotate(-45deg);
-    transition: 0.4s ease;
+.slider-section {
+    width: calc(100% / 3);
+    height: 100%;
 }
 
-.card-list .card-link:hover .card-button {
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
     color: #fff;
-    background: #5372F0;
+}
 
+.btn-left,
+.btn-right{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    transform: translate(0,-50%);
+    transition: .5s ease;
+    user-select: none;
+    z-index: 10;
 }
