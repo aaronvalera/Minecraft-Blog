@@ -96,7 +96,8 @@ nav a:hover {
     padding: 10px;
     outline: none;
     box-shadow: inset -2px -2px 0px #8B8B8B, inset 2px 2px 0px #FFFFFF;
-    width: 65%;
+    width: 85%;
+    margin: 20px;
 }
 
 .pic1 {
@@ -223,7 +224,16 @@ arranging and aligning the buttons */
     color: white;
 }
 
-/* carrusel biomas */
+/* biomas */
+
+.biomes-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
 
 .slider-section img {
     width: 95%;
@@ -237,10 +247,15 @@ arranging and aligning the buttons */
     width: 500px;
     height: 400px;
     background-color: #e0e0e0;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 8px  rgba(0, 0, 0, 0.7);
     border-radius: 15px;
     overflow: hidden;
     position: relative;
+}
+
+.slider-section p {
+    font-size: 15px;
+    text-align: center;
 }
 
 .carousels {
@@ -268,7 +283,7 @@ arranging and aligning the buttons */
 
 .btn-left:hover,
 .btn-right:hover {
-    background-color: #333333d4;
+    background-color: #333333dc;
     color: #fff;
 }
 
@@ -277,14 +292,44 @@ arranging and aligning the buttons */
     display: flex;
     position: absolute;
     top: 50%;
-    font-size: 1.5rem;
+    font-size: 3rem;
     background-color: transparent;
-    border-radius: 50%;
+    border-radius: 100%;
     padding: 5px;
     font-weight: 600;
     cursor: pointer;
-    color: #fff;
+    color: #cecece;
     transform: translate(0,-50%);
     transition: .5s ease;
     user-select: none;
+}
+
+/* biomes text decoration */
+
+.frozen-biomes {
+    color: #79c7ff;
+}
+
+.cold-biomes {
+    color: 	#2cbbce;
+}
+
+.exuberance-biomes {
+    color: #EB6E23;
+}
+
+.end-biomes {
+    color: #3d2856;
+}
+
+.warm-biomes {
+    color: #E3CBA8;
+}
+
+.nether-biomes {
+    color: #FF4500;
+}
+
+.ocean-biomes {
+    color: #1D334A;
 }
