@@ -57,12 +57,12 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 580px;
-    margin-bottom: 50px;
+    max-width: 100%;
+    height: 75%;
+    margin-bottom: 30px;
 }
 .trailer-video {
-    height: 100%;
+    height: auto;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -80,7 +80,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
+    max-width: 100%;
 }
 
 .container,
@@ -96,12 +96,12 @@ nav a:hover {
     padding: 10px;
     outline: none;
     box-shadow: inset -2px -2px 0px #8B8B8B, inset 2px 2px 0px #FFFFFF;
-    width: 85%;
     margin: 20px;
+    max-width: 85%;
 }
 
 .pic1 {
-    width: 50%;
+    max-width: 50%;
 }
 
 #inicio,
@@ -179,7 +179,7 @@ a:hover{
     
   width: auto;
   height: 50%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* Estilos de la información oculta */
@@ -235,14 +235,6 @@ arranging and aligning the buttons */
     padding: 20px;
 }
 
-.slider-section img {
-    width: 95%;
-    height: 75%;
-    margin: 8px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
 .carousel-container {
     width: 500px;
     height: 400px;
@@ -251,11 +243,6 @@ arranging and aligning the buttons */
     border-radius: 15px;
     overflow: hidden;
     position: relative;
-}
-
-.slider-section p {
-    font-size: 15px;
-    text-align: center;
 }
 
 .carousels {
@@ -271,14 +258,31 @@ arranging and aligning the buttons */
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
+
+.slider-section img {
+    width: 95%;
+    height: 75%;
+    margin: 8px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.slider-section p {
+    font-size: 14px;
+    text-align: center;
+}
+
+
 
 .btn-left {
     left: 10px;
 }
 
 .btn-right {
-    right: 10px;
+    right: 12px;
 }
 
 .btn-left:hover,
@@ -291,7 +295,7 @@ arranging and aligning the buttons */
 .btn-right{
     display: flex;
     position: absolute;
-    top: 50%;
+    top: 40%;
     font-size: 3rem;
     background-color: transparent;
     border-radius: 100%;
@@ -332,4 +336,108 @@ arranging and aligning the buttons */
 
 .ocean-biomes {
     color: #1D334A;
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+
+    .text {
+        padding: 8px;
+        padding-top: 0;
+    }
+
+
+    /* inicio */
+    .top-bg {
+        margin-bottom: 6px;
+    }
+
+    .trailer-video {
+        height: 520px;
+    }
+
+    .container {
+        padding: px;
+    }
+
+    /* biomes */
+    .carousel-container {
+        width: 170px;
+        height: fit-content;
+    }
+
+    .slider-section {
+        align-content: center;
+        justify-content: center;
+    }
+
+    
+    .slider-section img {
+        height: 50%;
+    }
+    
+    .slider-section p {
+        font-size: 10px;
+        padding: 5px;
+    }
+    
+    .slider-section span {
+        font-size: 15px;
+    }
+    
+    .btn-left,
+    .btn-right {
+        font-size: 15px;
+        top: 22%;
+    }
+
+    .btn-left {
+        left: 2%;
+    }
+
+    .btn-right {
+        right: 2%;
+    }
+
+    /* mobs */
+    .card-container {
+        padding: 5px;
+    }
+    
+    .card {
+        width: 115px;
+    }
+
+    .card img {
+        width: 6rem;
+    }
+
+    .card h2 {
+    }
+
+    .card-info {
+        font-size: 10px;
+        overflow: scroll;
+
+    }
+
+    .card-info h3 {
+        font-size: 15px;
+    }
+
+    .card:hover {
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    }
 }
