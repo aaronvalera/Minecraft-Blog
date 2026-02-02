@@ -7,6 +7,9 @@ body{
      min-height: 100vh;
      margin: 0px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Classes */
 
@@ -124,19 +127,6 @@ nav a:hover {
     background-image: url(./blog-images/diamond-ore.jpg);
 }
 
-/* .card-container{
-    width: 742px;
- 
-
-
-    background-color: #C6C6C6;
-    border: 10px solid #6f6d6d;
-    color: #3F3F3F;
-    font-family: 'VT323', monospace;
-    padding: 10px;
-    outline: none;
-    box-shadow: inset -2px -2px 0px #8B8B8B, inset 2px 2px 0px #FFFFFF;
-} */
 
 a {
     color: #3F3F3F;
@@ -216,7 +206,9 @@ arranging and aligning the buttons */
     gap: 40px;
     align-items: center;
     width: 40%;
+     
 }
+
 
 .text {
     border: double 3px black;
@@ -231,6 +223,7 @@ arranging and aligning the buttons */
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
 }
@@ -338,7 +331,61 @@ arranging and aligning the buttons */
     color: #1D334A;
 }
 
+.footer{
+    background-image: url(./blog-images/lava.jpg);
+    width: 100%;
+    height: 100px; 
+     display: flex;
+    justify-content: center; 
+   
+}
+.footer .author{
+    color: white;
+    font-weight: 1000;
+
+}
+/* .footer .author{
+    color: white;
+    font-family: "Russo One", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+    text-decoration: none;
+} */
+.footer .author{
+    background-color: black;
+    opacity: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+@media (max-width: 1024px) {
+    #bar-buttons{
+        gap: 26px;
+        width: 80%;
+    }
+}
+
+
 @media (max-width: 480px) {
+
+    #bar-buttons nav a{
+        font-size: 14px;
+    }
+    #bar-buttons{
+        gap: 17px;
+        width: 80%;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    #minecraft-bar-logo{
+        object-fit: contain;
+        width: 70px;
+    }
     h2 {
         font-size: 16px;
     }
