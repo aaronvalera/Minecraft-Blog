@@ -345,31 +345,24 @@ a:hover{
 }
 
 
+/* MEDIA QUERIES */
 
-@media (max-width: 1024px) {
-    #bar-buttons{
-        gap: 26px;
-        width: 80%;
-    }
-}
-
-
-@media (max-width: 480px) {
-
+/* smartphones and tablets */
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
     #bar-buttons nav a{
-        font-size: 18px;
+        font-size: 12px;
     }
 
     #bar-buttons{
-        justify-content: center;
-        gap: 15px;
-        width: 100%;
+        justify-content: flex-end;
+        max-width: 100%;
     }
 
     #minecraft-bar-logo{
         object-fit: contain;
-        width: 100px;
+        max-width: 60px;
     }
+    
     h2 {
         font-size: 16px;
     }
@@ -395,10 +388,6 @@ a:hover{
 
     .trailer-video {
         height: 520px;
-    }
-
-    .container {
-        padding: px;
     }
 
     /* biomes */
@@ -453,13 +442,9 @@ a:hover{
         width: 6rem;
     }
 
-    .card h2 {
-    }
-
     .card-info {
         font-size: 10px;
         overflow: scroll;
-
     }
 
     .card-info h3 {
