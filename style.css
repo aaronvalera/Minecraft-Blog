@@ -33,7 +33,7 @@ nav a:hover {
 .barra-navegacion img{
     height: 100px;
 }
-.nav-bar{
+.nav-bar {
     display: flex;
     width: 100%;
     align-items: center;
@@ -45,15 +45,22 @@ nav a:hover {
     font-family: 'VT323', monospace;
     outline: none;
     box-shadow: inset -2px -2px 0px #8B8B8B, inset 2px 2px 0px #FFFFFF;
-    padding: 10px;
-    height: 20px;                    /* code compressed */
+    padding: 20px 10px;
     position: fixed;
     z-index: 1;
+    max-height: 30px;
+    box-sizing: border-box;
+}
+
+#bar-buttons {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    width: 40%;
 }
 
 #minecraft-bar-logo {
     height: 100px;
-
 }
 
 .top-bg {
@@ -187,7 +194,7 @@ a:hover{
   box-sizing: border-box;
 }
 
-/* --- EFECTO HOVER --- */
+/* --- efecto hover --- */
 .card:hover .card-info {
   bottom: 0; /* sube la info al pasar el mouse */
 }
@@ -201,13 +208,6 @@ a:hover{
 /* BUTTONS OF THE NAVIGATION BAR
 arranging and aligning the buttons */
 
-#bar-buttons {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    width: 40%;
-     
-}
 
 
 .text {
@@ -216,7 +216,7 @@ arranging and aligning the buttons */
     color: white;
 }
 
-/* biomas */
+/* biomes */
 
 .biomes-container {
     display: flex;
@@ -373,18 +373,18 @@ arranging and aligning the buttons */
 @media (max-width: 480px) {
 
     #bar-buttons nav a{
-        font-size: 14px;
+        font-size: 18px;
     }
+
     #bar-buttons{
-        gap: 17px;
-        width: 80%;
-    }
-    .nav-bar{
+        justify-content: center;
+        gap: 15px;
         width: 100%;
     }
+
     #minecraft-bar-logo{
         object-fit: contain;
-        width: 70px;
+        width: 100px;
     }
     h2 {
         font-size: 16px;
