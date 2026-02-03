@@ -7,11 +7,10 @@ body{
      min-height: 100vh;
      margin: 0px;
 }
+
 html {
   scroll-behavior: smooth;
 }
-
-/* Classes */
 
 header {
     width: 100%;
@@ -33,7 +32,7 @@ nav a:hover {
 .barra-navegacion img{
     height: 100px;
 }
-.nav-bar{
+.nav-bar {
     display: flex;
     width: 100%;
     align-items: center;
@@ -45,15 +44,22 @@ nav a:hover {
     font-family: 'VT323', monospace;
     outline: none;
     box-shadow: inset -2px -2px 0px #8B8B8B, inset 2px 2px 0px #FFFFFF;
-    padding: 10px;
-    height: 20px;                    /* code compressed */
+    padding: 20px 10px;
     position: fixed;
     z-index: 1;
+    max-height: 30px;
+    box-sizing: border-box;
+}
+
+#bar-buttons {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    width: 40%;
 }
 
 #minecraft-bar-logo {
     height: 100px;
-
 }
 
 .top-bg {
@@ -187,7 +193,7 @@ a:hover{
   box-sizing: border-box;
 }
 
-/* --- EFECTO HOVER --- */
+/* --- efecto hover --- */
 .card:hover .card-info {
   bottom: 0; /* sube la info al pasar el mouse */
 }
@@ -196,27 +202,13 @@ a:hover{
   transform: translateY(-5px); /* salto de la tarjeta */
 }
 
-/* id */
-
-/* BUTTONS OF THE NAVIGATION BAR
-arranging and aligning the buttons */
-
-#bar-buttons {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    width: 40%;
-     
-}
-
-
 .text {
     border: double 3px black;
     background-color: #4b48488c;
     color: white;
 }
 
-/* biomas */
+/* biomes */
 
 .biomes-container {
     display: flex;
@@ -262,13 +254,10 @@ arranging and aligning the buttons */
     border-radius: 15px;
 }
 
-
 .slider-section p {
     font-size: 14px;
     text-align: center;
 }
-
-
 
 .btn-left {
     left: 10px;
@@ -331,29 +320,20 @@ arranging and aligning the buttons */
     color: #1D334A;
 }
 
+/* footer */
 .footer{
     background-image: url(./blog-images/lava.jpg);
     width: 100%;
     height: 100px; 
      display: flex;
-    justify-content: center; 
-   
+    justify-content: center;
 }
-.footer .author{
-    color: white;
-    font-weight: 1000;
 
-}
-/* .footer .author{
+.footer .author {
     color: white;
-    font-family: "Russo One", sans-serif;
     font-weight: 1000;
-    font-style: normal;
-    text-decoration: none;
-} */
-.footer .author{
     background-color: black;
-    opacity: 70%;
+    opacity: 60%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -361,31 +341,24 @@ arranging and aligning the buttons */
 }
 
 
+/* MEDIA QUERIES */
 
-@media (max-width: 1024px) {
-    #bar-buttons{
-        gap: 26px;
-        width: 80%;
-    }
-}
-
-
-@media (max-width: 480px) {
-
+/* smartphones and tablets */
+@media screen and (max-width: 480px), screen and (max-width: 768px) {
     #bar-buttons nav a{
-        font-size: 14px;
+        font-size: 12px;
     }
+
     #bar-buttons{
-        gap: 17px;
-        width: 80%;
+        justify-content: flex-end;
+        max-width: 100%;
     }
-    .nav-bar{
-        width: 100%;
-    }
+
     #minecraft-bar-logo{
         object-fit: contain;
-        width: 70px;
+        max-width: 60px;
     }
+    
     h2 {
         font-size: 16px;
     }
@@ -411,10 +384,6 @@ arranging and aligning the buttons */
 
     .trailer-video {
         height: 520px;
-    }
-
-    .container {
-        padding: px;
     }
 
     /* biomes */
@@ -469,13 +438,9 @@ arranging and aligning the buttons */
         width: 6rem;
     }
 
-    .card h2 {
-    }
-
     .card-info {
         font-size: 10px;
         overflow: scroll;
-
     }
 
     .card-info h3 {
