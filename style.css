@@ -7,11 +7,10 @@ body{
      min-height: 100vh;
      margin: 0px;
 }
+
 html {
   scroll-behavior: smooth;
 }
-
-/* Classes */
 
 header {
     width: 100%;
@@ -203,13 +202,6 @@ a:hover{
   transform: translateY(-5px); /* salto de la tarjeta */
 }
 
-/* id */
-
-/* BUTTONS OF THE NAVIGATION BAR
-arranging and aligning the buttons */
-
-
-
 .text {
     border: double 3px black;
     background-color: #4b48488c;
@@ -262,13 +254,10 @@ arranging and aligning the buttons */
     border-radius: 15px;
 }
 
-
 .slider-section p {
     font-size: 14px;
     text-align: center;
 }
-
-
 
 .btn-left {
     left: 10px;
@@ -331,6 +320,7 @@ arranging and aligning the buttons */
     color: #1D334A;
 }
 
+/* footer */
 .footer{
     background-image: url(./blog-images/lava.jpg);
     width: 100%;
@@ -344,14 +334,8 @@ arranging and aligning the buttons */
     font-weight: 1000;
 
 }
-/* .footer .author{
-    color: white;
-    font-family: "Russo One", sans-serif;
-    font-weight: 1000;
-    font-style: normal;
-    text-decoration: none;
-} */
-.footer .author{
+
+.footer .author {
     background-color: black;
     opacity: 70%;
     width: 100%;
